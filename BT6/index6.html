@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script >
+let number =+prompt("nhap so luong so nguyen to ")
+let Count = 0
+let count = 0
+if(number > 0){
+for(let numbers=2;numbers<100;numbers++){
+        for(let i=2;i<=numbers;i++){
+            
+            if(numbers%i==0)
+            {count++}
+        }
+        if(count==1){
+            Count++
+            console.log(`${numbers}`)
+            // console.log(Count)
+        }
+        count = 0
+        if (Count>=number) {
+            break;
+        }
+    }
+}else{
+    console.log("moi nhap lai")
+}
+
+
+    </script>
+</body>
+</html>

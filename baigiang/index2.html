@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let count = 0;
+        let text = prompt("moi nhap vao");
+        if(text == "123456" )
+        {
+            alert("ban da nhap dung")
+        }else{
+            do{
+                if(text != "123456"){
+                 count ++;
+                 text = prompt(`moi nhap lai lan ${count+1}`)
+                } 
+            }
+            while(count<2)
+            alert("het luot nhap")
+        }
+    </script>
+</body>
+</html>
